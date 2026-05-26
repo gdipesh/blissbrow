@@ -1,0 +1,6 @@
+{
+  "name": "BrowBliss Threading",
+  "description": "Beautiful brows and flawless skin. A private home studio located in Woodland, CA offering precise eyebrow threading, skin services, and brow mapping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

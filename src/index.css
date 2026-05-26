@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', sans-serif;
+  --color-blush: #F2C4CE;
+  --color-dusty: #C4687A;
+  --color-cream: #FDF6F0;
+  --color-gold: #C9A96E;
+  --color-charcoal: #2D2D2D;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  color: #2D2D2D;
+  background-color: #FDF6F0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-serif-heading {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: -0.01em;
+}
+
+/* Custom Dotted Line Leader utility */
+.dotted-leader-container {
+  display: flex;
+  align-items: baseline;
+}
+.dotted-leader {
+  flex-grow: 1;
+  border-bottom: 2px dotted #C4687A;
+  opacity: 0.35;
+  margin: 0 10px;
+}
+
