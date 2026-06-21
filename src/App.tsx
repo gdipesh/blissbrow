@@ -4,7 +4,7 @@
  */
 
 import React, { useState, useEffect } from 'react';
-import { db } from './lib/db';
+import { db, supabase, isSupabaseConfigured } from './lib/db';
 import { 
   Service, 
   BusinessHours, 
@@ -72,8 +72,30 @@ export default function App() {
     }
   };
 
+  // Load all database parameters, syncing state when login mode shifts
   useEffect(() => {
     loadDatabase();
+  }, [isAdminLoggedIn]);
+
+  // Subscribe to live Supabase authorization state changes to seamlessly handle active sessions
+  useEffect(() => {
+    if (isSupabaseConfigured && supabase) {
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+        if (session?.user) {
+          setIsAdminLoggedIn(true);
+          sessionStorage.setItem('bb_admin_session', 'true');
+        } else if (event === 'SIGNED_OUT') {
+          setIsAdminLoggedIn(false);
+          sessionStorage.setItem('bb_admin_session', 'false');
+        }
+        // Always refresh database state on auth transitions
+        loadDatabase();
+      });
+
+      return () => {
+        subscription.unsubscribe();
+      };
+    }
   }, []);
 
   // Show Toast Dialog
