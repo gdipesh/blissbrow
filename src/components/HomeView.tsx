@@ -21,7 +21,7 @@ import {
   Gem,
 } from "lucide-react";
 import { Service, BusinessInfo, BusinessHours } from "../types";
-
+import browBlissLogo from "../image/browbliss.jpg";
 interface HomeViewProps {
   services: Service[];
   info: BusinessInfo;
@@ -59,7 +59,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       q: "What methods of payment do you accept?",
-      a: "We accept Zelle, Venmo, Apple Pay, and Cash. Badges and instructions are provided at checkout inside the studio.",
+      a: "We accept Zelle, Venmo, Apple Cash, and Cash. Badges and instructions are provided at checkout inside the studio.",
     },
     {
       q: "Is threading better than waxing?",
@@ -73,21 +73,21 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
   const testimonials = [
     {
-      name: "Maria G.",
+      name: "Brianna Turner",
       city: "Woodland, CA",
-      text: "I cannot believe I found $6 threading of this quality in Woodland. She is so precise, gentle, and the studio is perfectly clean and relaxing. Found my permanent brow home!",
+      text: "She does an AMAZING job I always leave very happy and content with how my eyebrows look. Would 100% recommend doesn’t thin out your brows or take to much off. Very superior work. Recommend.",
       rating: 5,
     },
     {
-      name: "Samantha L.",
+      name: "Alenna R.",
       city: "Davis, CA",
-      text: "The full face threading ($22) was incredibly meticulous. My skin feels like silk and the brow mapping was absolute perfection. I love the private home environment!",
+      text: "i recommend her she's been the only one to do my eybrows how i actually want them...it's not a shop it's her home she does a awesome job in my opinion!!",
       rating: 5,
     },
     {
-      name: "Elena R.",
-      city: "Woodland, CA",
-      text: "Booking is extremely easy and fast. Best brows I have ever had! The private studio vibe is so cozy and calming. Highly professional!",
+      name: "Nancy.",
+      city: "Davis, CA",
+      text: "100% recommend BrowBliss Threading! Clean, professional, and amazing results all the time. Best Brows shaping in the town.",
       rating: 5,
     },
   ];
@@ -333,7 +333,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <div className="md:w-1/2 relative">
             <div className="absolute top-3 left-3 -right-3 -bottom-3 rounded-3xl border-2 border-gold/50 pointer-events-none"></div>
             <img
-              src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&q=80&w=800"
+              src={browBlissLogo}
               alt="Intimate custom brow studio Woodland CA"
               className="rounded-3xl shadow-xl w-full z-10 relative object-cover h-[420px]"
             />

@@ -297,10 +297,10 @@ export default function App() {
           <div className="space-y-4">
             <h4 className="font-serif text-lg font-bold text-blush tracking-wider">Accepted Store Payments</h4>
             <p className="text-xs text-cream/60 leading-relaxed font-light">
-              We accept Zelle transfers, Venmo, Apple Pay, and traditional Cash inside our home studio.
+              We accept Zelle transfers, Venmo, Apple Cash, and traditional Cash inside our home studio.
             </p>
             <div className="flex flex-wrap gap-2 pt-1">
-              {['Zelle', 'Venmo', 'Apple Pay', 'Cash'].map((pay) => (
+              {['Zelle', 'Venmo', 'Apple Cash', 'Cash'].map((pay) => (
                 <span key={pay} className="text-[10px] font-semibold text-blush border border-blush/20 rounded px-2.5 py-1 bg-white/5 uppercase tracking-wider">
                   {pay}
                 </span>
