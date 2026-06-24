@@ -66,7 +66,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       a: "Yes! Threading is highly recommended by dermatologists because it is 100% natural, chemical-free, and does not peel or damage the top layer of skin. It is extremely precise, removing even the finest facial peach fuzz from the root for longer-lasting results.",
     },
     {
-      q: "What is Henna tinting?",
+      q: "What is Henna design?",
       a: "Henna is a natural plant-based dye that temporarily tints the brow hairs (up to 6 weeks) and the skin underneath (up to 2 weeks), creating a beautiful shadow. It fills in sparse areas for a fuller, makeup-ready brow look! Henna is starting at $10.",
     },
   ];
@@ -80,7 +80,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
     },
     {
       name: "Alenna R.",
-      city: "Davis, CA",
+      city: "Woodland, CA",
       text: "i recommend her she's been the only one to do my eybrows how i actually want them...it's not a shop it's her home she does a awesome job in my opinion!!",
       rating: 5,
     },
