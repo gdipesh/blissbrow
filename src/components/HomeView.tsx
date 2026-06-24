@@ -371,17 +371,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <Check size={12} className="text-dusty" />
                 </div>
                 <span className="text-sm text-charcoal/90 font-medium">
-                  Calming skincare application using soft aloe vera
-                  post-threading
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-blush/10 flex items-center justify-center">
-                  <Check size={12} className="text-dusty" />
-                </div>
-                <span className="text-sm text-charcoal/90 font-medium">
-                  Tailored and custom brow mapping mapped specifically for your
-                  jaw and gaze
+                  Calming skincare application using soft Aveeno cream post-threading
                 </span>
               </div>
             </div>
